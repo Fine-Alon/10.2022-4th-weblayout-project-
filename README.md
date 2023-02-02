@@ -1,10 +1,13 @@
-# 10.2022-4th-weblayout-project.
-HTML-SCC-JS
+# 10.2022-4th-weblayout-project (HTML-SCC-JS).
+# Castom:  form Validation(JS), checkbox(JS) ,selector(JS), MAPS(JS), Tooltip(JS), Scroll(JS) 
+
+
 tools:       
 Pixel perfect____
 Media quaries____
 Responsive image____
-{ Castom:  form Validation(JS), checkbox(JS) ,selector(JS), MAPS(JS), Tooltip(JS), Scroll(JS) }
+
+
 *basic tags.               *scrolling.                                        *content & decorative imagrs
 
  *image tags.              *z-index (layers).                                 *text owerflow - (check)       
