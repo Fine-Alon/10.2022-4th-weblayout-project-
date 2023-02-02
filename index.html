@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normaliza.css">
+  <link rel="stylesheet" href="./css/choices.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <ul class="list">
+      <li class="list__element checker-list">
+        <h3 class="checker_topick">Категории:</h3>
+        <label for="check1" class="checker_item">
+          <input type="checkbox" name="checker" class="checker" id="check1">
+          <span class="kastom-check"></span>
+        </label>
+        <span class="inline-block">Динозавры</span>
+        <label for="check2" class="checker_item">
+          <input type="checkbox" name="checker" class="checker" id="check2">
+          <span class="kastom-check"></span>
+        </label>
+        <span class="inline-block">Медведи</span>
+        <label for="check3" class="checker_item">
+          <input type="checkbox" name="checker" class="checker" id="check3">
+          <span class="kastom-check"></span>
+        </label>
+        <span class="inline-block">Косули</span>
+        <label for="check4" class="checker_item">
+          <input type="checkbox" name="checker" class="checker" id="check4">
+          <span class="kastom-check"></span>
+        </label>
+        <span class="inline-block">Лисы</span>
+        <label for="check5" class="checker_item">
+          <input type="checkbox" name="checker" class="checker" id="check5">
+          <span class="kastom-check"></span>
+        </label>
+        <span class="inline-block">Волки</span>
+        <label for="check6" class="checker_item">
+          <input type="checkbox" name="checker" class="checker" id="check6">
+          <span class="kastom-check"></span>
+        </label>
+        <span class="inline-block">Олени и лоси </span>
+      </li>
+      <li class="list__element">
+        <select class="js-choice">
+          <option value="">Материал</option>
+          <option>Древесина</option>
+          <option>Металл</option>
+          <option>Камень</option>
+          <option>Пластик</option>
+          <option>Композитный</option>
+          <option>Гипс</option>
+        </select>
+      </li>
+      <li class="list__element">
+        <p class="map-descr">В&nbsp;качестве адреса для маркера используйте: Франция, Иль-де-Франс, Париж,
+          X&nbsp;округ Парижа,
+          улица дю&nbsp;Фобур Сен Дени&nbsp;54</p>
+        <div id="map" class="map"></div>
+      </li>
+      <li class="list__element">
+        <div data-simplebar class="scroll" id="scroll">
+          <p class="scroll_descr">
+            Сложно сказать, почему многие известные личности представлены в&nbsp;исключительно положительном свете. Лишь
+            активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями.
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высокотехнологичная концепция общественного уклада
+            представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка
+            зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно
+            интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, обнародованы. Значимость
+            этих проблем настолько очевидна, что социально-экономическое развитие, а&nbsp;также свежий взгляд
+            на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для первоочередных требований.
+          </p>
+        </div>
+      </li>
+      <li class="list__element">
+        <form action="" id="form" class="js-form form flex castom-form" autocomplete="off">
+          <div class="form-selector">
+            <label class="castom-label" for="name">Enter your name</label>
+            <input autocomplete="off" type="text" class="form__input form-control castom-el" placeholder="Имя*"
+              name="name" id="name" data-validate-field="name" />
+          </div>
+          <div class="form-selector">
+            <label class="castom-label" for="tell">tel</label>
+            <input autocomplete="off" type="tel" class="form__tell form__control castom-el" placeholder="Телефон*"
+              data-validate-field="phone" id="phone" name="phone" data-inputmask="'mask': '+(999)-999-99-99-99'" />
+          </div>
+          <div class="form-selector">
+            <label class="castom-label" for="email">Enter your email</label>
+            <input autocomplete="off" type="email" class="form__input form-control castom-el" placeholder="E-mail*"
+              name="email" id="email" data-validate-field="email" />
+          </div>
+          <button class="btn btn-primary" id="submit-btn">Заказать</button>
+        </form>
+      </li>
+      <li class="list__element">
+        <div class="tippytool">
+          <p class="tippytool_descr">
+            Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления
+            внешнеэкономических политик. <span class="tippy-img"><svg width="16" height="16" viewBox="0 0 16 16"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+                  fill="none" />
+              </svg>
+            </span>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
